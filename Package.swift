@@ -22,6 +22,9 @@ let package = Package(
                 .define("SQLCIPHER_CRYPTO_CC"),
                 .define("NDEBUG"),
             ],
+            swiftSettings: [
+                .define("SQLITE_HAS_CODEC"),
+            ],
             linkerSettings: [
                 .linkedFramework("Foundation"),
                 .linkedFramework ("Security"),
